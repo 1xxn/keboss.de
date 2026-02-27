@@ -155,7 +155,9 @@
         <p class="text-[10px] text-zinc-700 mt-2">© 2026 Keboss</p>
     </footer>
 
-    <dialog id="impressumModal" class="bg-zinc-900/95 border border-zinc-700 text-zinc-200 rounded-2xl p-6 w-[90%] max-w-sm m-auto shadow-2xl backdrop-blur-md">
+    <dialog id="impressumModal" class="bg-zinc-900/95 border border-zinc-700 text-zinc-200 p-6 shadow-2xl backdrop-blur-md w-full sm:max-w-sm sm:m-auto mt-auto mb-0 rounded-t-3xl rounded-b-none sm:rounded-2xl pb-[calc(1.5rem+env(safe-area-inset-bottom))]">
+        <div class="w-12 h-1.5 bg-zinc-700 rounded-full mx-auto mb-6 sm:hidden"></div>
+        
         <div class="flex justify-between items-center mb-5 pb-3 border-b border-zinc-800">
             <h3 class="text-base font-bold tracking-wide">Impressum</h3>
             <button class="close-modal text-zinc-400 hover:text-white transition-colors p-1 rounded-md hover:bg-zinc-800">
@@ -164,22 +166,23 @@
         </div>
         <div class="text-xs text-zinc-400 space-y-3 leading-relaxed">
             <p><strong class="text-zinc-300">Angaben gemäß § 5 TMG:</strong></p>
-            <p>Keboss Leon<br>
-            Berlin</p>
+            <p>Keboss Leon<br>Berlin</p>
             <p><strong class="text-zinc-300">Kontakt:</strong><br>
-            E-Mail: <a href="mailto:kontakt@keboss.de" class="text-zinc-300 hover:underline">mngmt@keboss.de</a></p>
+            E-Mail: <a href="mailto:mngmt@keboss.de" class="text-zinc-300 hover:underline">mngmt@keboss.de</a></p>
             <p class="text-[10px] italic mt-4 text-zinc-500">Inhaltlich verantwortlich gem. § 55 II RStV: Keboss Leon</p>
         </div>
     </dialog>
 
-    <dialog id="datenschutzModal" class="bg-zinc-900/95 border border-zinc-700 text-zinc-200 rounded-2xl p-6 w-[90%] max-w-sm m-auto shadow-2xl backdrop-blur-md">
+    <dialog id="datenschutzModal" class="bg-zinc-900/95 border border-zinc-700 text-zinc-200 p-6 shadow-2xl backdrop-blur-md w-full sm:max-w-sm sm:m-auto mt-auto mb-0 rounded-t-3xl rounded-b-none sm:rounded-2xl pb-[calc(1.5rem+env(safe-area-inset-bottom))]">
+        <div class="w-12 h-1.5 bg-zinc-700 rounded-full mx-auto mb-6 sm:hidden"></div>
+
         <div class="flex justify-between items-center mb-5 pb-3 border-b border-zinc-800">
             <h3 class="text-base font-bold tracking-wide">Datenschutz</h3>
             <button class="close-modal text-zinc-400 hover:text-white transition-colors p-1 rounded-md hover:bg-zinc-800">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
-        <div class="text-xs text-zinc-400 space-y-3 h-64 overflow-y-auto pr-3 leading-relaxed">
+        <div class="text-xs text-zinc-400 space-y-3 h-64 overflow-y-auto pr-3 leading-relaxed overscroll-contain">
             <p><strong class="text-zinc-300">1. Datenschutz auf einen Blick</strong><br>
             Allgemeine Hinweise: Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
             <p><strong class="text-zinc-300">2. Datenerfassung auf dieser Website</strong><br>
