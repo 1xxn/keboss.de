@@ -1,0 +1,72 @@
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #09090b;
+    background-image: radial-gradient(circle at 50% 0%, #18181b 0%, transparent 50%);
+}
+
+.social-card {
+    transform: translate3d(0, 0, 0); 
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, box-shadow, border-color, background-color;
+    background: rgba(24, 24, 27, 0.6);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.social-card:hover {
+    transform: translate3d(0, -6px, 0) scale(1.015);
+}
+
+.card-discord {
+    background: rgba(88, 101, 242, 0.08);
+    border-color: rgba(88, 101, 242, 0.4);
+}
+.card-discord:hover {
+    border-color: #5865F2;
+    box-shadow: 0 10px 30px -10px rgba(88, 101, 242, 0.5);
+    background: rgba(88, 101, 242, 0.15);
+}
+
+.card-twitch:hover {
+    border-color: #9146FF;
+    box-shadow: 0 10px 30px -10px rgba(145, 70, 255, 0.4);
+}
+
+.card-youtube:hover {
+    border-color: #FF0000;
+    box-shadow: 0 10px 30px -10px rgba(255, 0, 0, 0.4);
+}
+
+.card-tiktok:hover {
+    border-color: #00f2fe; 
+    box-shadow: 0 10px 30px -10px rgba(0, 242, 254, 0.4);
+}
+
+.card-instagram:hover {
+    border-color: #E1306C;
+    box-shadow: 0 10px 30px -10px rgba(225, 48, 108, 0.4);
+}
+
+dialog {
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+    transform: scale(0.95) translate3d(0,20px,0);
+}
+dialog[open] {
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+dialog[open]::backdrop {
+    opacity: 1;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #52525b; }
