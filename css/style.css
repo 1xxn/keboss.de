@@ -6,15 +6,24 @@ body {
 
 .social-card {
     transform: translate3d(0, 0, 0); 
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform, box-shadow, border-color, background-color;
     background: rgba(24, 24, 27, 0.6);
     backdrop-filter: blur(12px); 
     -webkit-backdrop-filter: blur(12px);
+    -webkit-tap-highlight-color: transparent;
 }
 
-.social-card:hover {
-    transform: translate3d(0, -6px, 0) scale(1.015);
+@media (hover: hover) and (pointer: fine) {
+    .social-card:hover {
+        transform: translate3d(0, -6px, 0) scale(1.015);
+    }
+}
+
+.social-card:active {
+    transform: translate3d(0, 2px, 0) scale(0.96) !important;
+    transition: all 0.1s ease !important;
+    background: rgba(255, 255, 255, 0.05); 
 }
 
 .card-discord {
